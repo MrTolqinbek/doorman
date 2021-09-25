@@ -1,0 +1,194 @@
+.me--box {
+    position: relative;
+    display: block;
+    width: calc(100% - 250px);
+    color: var(--black);
+    float: right;
+    background-position: center 20px;
+    background-size: 400px 400px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url('../images/—Pngtree—gray\ ink\ circle_6373305.png');
+}
+
+.me--box .p {
+    color: var(--red);
+    text-align: center;
+    padding: 20px;
+    font-size: 27px;
+    background-color: rgb(250, 250, 250);
+}
+
+.me--box .h1 {
+    padding: 20px 0 40px;
+    font-size: 47px;
+    text-align: center;
+}
+
+.me--box .a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    font-size: 20px;
+}
+
+.konsultasiya {
+    margin: 40px 0;
+    background-color: var(--red);
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.konsultasiya .h6 {
+    padding-bottom: 20px;
+}
+
+.forma {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.forma input {
+    flex-basis: 200px;
+    margin: 20px 10px;
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    height: 35px;
+    border-radius: 30px;
+    padding: 10px;
+    color: var(--black);
+}
+
+.ok {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.ok>div {
+    flex-grow: 1;
+    flex-basis: 300px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.ok>div:last-child {
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnok {
+    padding: 10px;
+    border: 3px solid white;
+    background-color: white;
+    color: var(--red);
+    transition: .3s linear;
+}
+
+.btnok:hover {
+    padding: 10px;
+    border: 3px solid white;
+    background-color: var(--red);
+    color: white;
+}
+
+.manzillar .sa {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.manzillar .wh {
+    padding: 20px 0;
+}
+
+.manzillar .wh ul {
+    list-style: none;
+    /* Remove default bullets */
+}
+
+.manzillar .wh ul li{
+    position: relative;
+    margin-left: 20px;
+}
+.manzillar .wh ul li::before {
+    position: absolute;
+    top: -22px;
+    left: -20px;
+    content: "\2022";
+    color: var(--red);
+    font-weight: bold;
+    font-size: 40px;
+   
+}
+
+.manzillar .wh p {
+    font-size: 20px;
+}
+
+.manzillar .sa p {
+    text-align: left;
+    width: 260px;
+}
+
+.manzillar .sa i {
+    color: var(--red);
+    margin-left: 10px;
+}
+
+.manzillar .sa h6 {
+    text-align: right;
+    color: var(--red);
+
+}
+
+.manzillar .sa a {
+    color: var(--red);
+}
+
+@media (max-width:800px) {
+
+    .me--box {
+        width: 100%;
+    }
+}
+
+@media (max-width:500px) {
+    .me--box .a {
+        flex-direction: column;
+    }
+
+    .me--box>div .name {
+        width: 100%;
+        text-align: center;
+        font-weight: 900;
+    }
+
+    .me--box>div .info {
+        text-align: center;
+    }
+
+    .manzillar .sa p {
+        text-align: left;
+        width: 100%;
+    }
+
+    .manzillar .sa h6 {
+        text-align: right;
+        width: 100%;
+    }
+
+    .manzillar .sa {
+        flex-wrap: wrap;
+    }
+}
